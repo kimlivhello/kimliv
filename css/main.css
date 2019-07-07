@@ -1,0 +1,793 @@
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+  /* font-family: 'Poiret One', cursive;
+   font-family: 'Open Sans', sans-serif; */
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #eff6ff;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: #c10001;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    /*margin: 0;*/
+}
+
+ul li,
+ol li {
+    display: inline;
+    text-decoration: none;
+}
+
+a {
+    color: #c10001;
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content-container {
+    padding: 5%;
+    text-align: center;
+}
+
+
+
+/***** Header Mobile Styles *****/
+
+header {
+    /*
+    background: url("../img/white-wall.png") no-repeat;
+    background-size: cover; */
+    background: white;
+    /* margin: 0; */
+}
+
+header .header-container {
+    padding: 5%;
+    text-align: center;
+} 
+
+header h1 {
+   /* margin-top: 20px; */
+}
+
+header .logo-container {
+   /*  margin: 30px 0; */
+}
+
+header img {
+    height: 120px;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav ul li {
+    font-size: 1.25em;
+    padding: 0.75em;
+}
+
+header nav ul li a {
+    color: #2a555e;
+}
+
+header .header-bottom {
+    border-top: 3px solid #c10001;
+    border-bottom: 3px solid #c10001;
+    padding: 10%;
+    margin-bottom: 50px;
+    }
+
+/***** Portfolio Mobile Styles *****/
+
+#portfolio img {
+  margin-top: 10%;
+}
+
+#portfolio h3 {
+  /*  margin-top: 3%; */
+}
+
+/***** Services Mobile Styles *****/
+
+#services {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+#services h2 {
+    color: #c10001;
+}
+
+#services i {
+    color: #c10001;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+#services p {
+    line-height: 1.7em;
+    padding: 0 1em;
+}
+
+/***** About Me Mobile Styles *****/
+
+#about-me img {
+    border-radius: 5%;
+    max-height: 400px;
+    padding: 5%;
+}
+
+#about-me p {
+    padding: 5%;
+    line-height: 1.7em;
+    /* margin: 0; */
+    text-align: left;
+}
+
+/***** Contact Mobile Styles *****/
+
+#contact {
+    background-color: white;
+    padding: 10%;
+}
+
+#contact .content-container {
+    padding-top: 0;
+}
+
+#contact h2 {
+   /* margin: 0; */
+}
+
+.social-icons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0 5px 10px 5px;
+    width: 100%;
+}
+
+#contact i {
+    color: #c10001;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+/***** Footer Mobile Styles *****/
+
+footer {
+    background-color: #c10001;
+    color: #eff6ff;
+    text-align: center;
+}
+
+footer a {
+    color: #b3d4fc;
+}
+
+/**** Icon Page *****/
+
+#icon-header {
+    padding: 0 50px;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-logo-container {
+    width = 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-logo {
+    padding: 20px;
+}
+
+#icon-header h1 {
+    width: 100%;
+}
+
+#icon-header h4 {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#icon-header a {
+    font-size: 1em;
+}
+
+.month {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0;
+}
+
+.month h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.icon-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.icon-image {
+    border: 1px solid #2a555e;
+    text-align: center;
+    width: 200px;
+}
+
+.caption {
+    padding: 10px;
+}
+
+.caption span {
+    font-weight: bold;
+}
+
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+    /*** Header Section Tablet Styles ***/
+
+    header .header-container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    header .header-top {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .logo-container {
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    /*** Portfolio Section Tablet Styles ***/
+
+    #portfolio img {
+        margin-top: 10%;
+    }
+
+    #portfolio .content-container {
+        padding-bottom: 50px;
+    }
+
+    /*** Services Section Tablet Styles ***/
+
+    #services {
+        padding-bottom: 0;
+    }
+    
+    #services .services-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+       /* margin-bottom: 50px; */
+    }
+
+    #services article {
+        width: 30%;
+    }
+
+    /*** About Me Section Tablet Styles ***/
+
+    #about-me {
+        margin: 0 auto;
+    }
+
+    #about-me img {
+        border-radius: 20%;
+        max-height: 250px;
+    }
+
+    #about-me h2 {
+        width: 100%;
+    }
+
+    #about-me .about-me-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #about-me .about-half {
+        width: 45%;
+    }
+
+    /*** Contact Section Tablet Styles ***/
+
+    #contact {
+        padding: 5% 10%;
+    }
+
+    #contact .contact-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    #contact .email,
+    #contact .social {
+        width: 40%;
+    }
+
+    #contact i {
+        font-size: 2.5em;
+    }
+
+    /***** Footer Tablet Styles *****/
+
+    footer {
+        padding: 5% 0;
+    }
+
+    footer .content-container {
+        padding: 0;
+    }
+
+    /***** Icon Page Tablet Styles *****/
+
+    #icon-header {
+        padding: 0 50px;
+        margin: 0;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    #icon-logo-container {
+        width = 30%;
+    }
+
+    #icon-logo {
+        height: 60px;
+        padding-left: 0;
+    }
+    
+    #icon-header h1 {
+        margin: 0;
+        padding-top: 10px;
+        text-align: right;
+        width: 85%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .content-container {
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    header,
+    #portfolio,
+    #about-me,
+    #services,
+    #contact,
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }    
+
+    p {
+        font-size: 1.125em;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+   /*** Header Desktop Styles ***/
+
+    header h1 {
+        font-size: 3.75em;
+    }
+
+    header .header-top {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    header .logo-container {
+        display: flex;
+        justify-content: flex-center;
+        width: 20%;
+    }
+
+    header .header-bottom {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 1200px;
+    }
+
+   /*** Portfolio Desktop Styles ***/
+
+    #portfolio .gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #portfolio .project {
+        width: 45%;
+    }
+
+    /*** About Me Desktop Styles ***/
+
+    #about-me img {
+        max-height: 400px;
+    }
+
+    /*** Contact Desktop Styles ***/
+
+    #contact .content-container {
+        width: 100%;
+    }
+
+    #contact i {
+        font-size: 3em;
+    }
+
+
+
+}
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h1,
+    h2 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1,
+    h2 {
+        page-break-after: avoid;
+    }
+}
+
+
