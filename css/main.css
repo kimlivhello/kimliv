@@ -329,9 +329,14 @@ footer a {
     width: 100%;
 }
 
+#icon-header p {
+    width: 100%;
+}
+
 #icon-header h4 {
     text-align: left;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 #icon-header a {
@@ -343,10 +348,13 @@ footer a {
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: center;
-    padding: 30px 0;
 }
 
 .month h2 {
+    background-color: white;
+    border-top: 1px solid #2a555e;
+    padding: 30px;
+    margin: 0 0 30px 0;
     text-align: center;
     width: 100%;
 }
@@ -355,6 +363,7 @@ footer a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 30px 0;
 }
 
 .icon-image {
