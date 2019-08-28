@@ -174,20 +174,12 @@ header {
 }
 
 header .header-container {
-    padding: 5%;
+    padding: 3%;
     text-align: center;
 } 
 
-header h1 {
-   /* margin-top: 20px; */
-}
-
-header .logo-container {
-   /*  margin: 30px 0; */
-}
-
 header img {
-    height: 120px;
+    height: 200px;
 }
 
 header nav ul {
@@ -195,6 +187,7 @@ header nav ul {
     flex-flow: column nowrap;
     justify-content: space-around;
     padding: 0;
+    margin-top: 0;
 }
 
 header nav ul li {
@@ -209,19 +202,112 @@ header nav ul li a {
 header .header-bottom {
     border-top: 3px solid #c10001;
     border-bottom: 3px solid #c10001;
-    padding: 10%;
+    padding: 5%;
     margin-bottom: 50px;
     }
 
 /***** Portfolio Mobile Styles *****/
 
-#portfolio img {
-  margin-top: 10%;
+#portfolio h2, #portfolio p {
+    text-align: center;
 }
 
-#portfolio h3 {
-  /*  margin-top: 3%; */
-}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 300px;
+    position: relative;
+    margin: 50px auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a blue background color */
+  .prev:hover, .next:hover {
+    background-color: rgba(112,171,175,1);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #2a555e;
+    font-size: 1.5em;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #2a555e;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dots {
+      margin-bottom: 70px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 /***** Services Mobile Styles *****/
 
@@ -232,6 +318,7 @@ header .header-bottom {
 
 #services h2 {
     color: #c10001;
+    margin-top: 0;
 }
 
 #services i {
@@ -260,6 +347,10 @@ header .header-bottom {
     text-align: left;
 }
 
+#about-me h2 {
+    margin-top: 0;
+}
+
 /***** Contact Mobile Styles *****/
 
 #contact {
@@ -272,7 +363,7 @@ header .header-bottom {
 }
 
 #contact h2 {
-   /* margin: 0; */
+   margin: 0;
 }
 
 .social-icons {
@@ -314,7 +405,6 @@ footer a {
 }
 
 #icon-logo-container {
-    width = 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -511,13 +601,9 @@ footer a {
 
     /*** Portfolio Section Tablet Styles ***/
 
-    #portfolio img {
-        margin-top: 10%;
-    }
-
-    #portfolio .content-container {
-        padding-bottom: 50px;
-    }
+    .slideshow-container {
+        max-width: 700px;
+      }
 
     /*** Services Section Tablet Styles ***/
 
@@ -605,21 +691,17 @@ footer a {
         justify-content: flex-start;
         align-items: flex-start;
     }
-    
-    #icon-logo-container {
-        width = 30%;
-    }
 
     #icon-logo {
-        height: 60px;
-        padding-left: 0;
+        height: 120px;
+        padding-bottom: 0;
     }
     
     #icon-header h1 {
         margin: 0;
-        padding-top: 10px;
+        padding-top: 50px;
         text-align: right;
-        width: 85%;
+        width: 75%;
     }
 
 }
@@ -637,7 +719,6 @@ footer a {
     }
 
     header,
-    #portfolio,
     #about-me,
     #services,
     #contact,
@@ -682,16 +763,19 @@ footer a {
 
    /*** Portfolio Desktop Styles ***/
 
-    #portfolio .gallery {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
+   .slideshow-container {
+       max-width: 1000px;
+       margin: auto;
+     }
 
-    #portfolio .project {
-        width: 45%;
-    }
+     #portfolio h2 {
+         margin-top: 50px;
+         width: 100%;
+     }
+
+     .dots {
+         margin-bottom: 70px;
+     }
 
     /*** About Me Desktop Styles ***/
 
@@ -709,6 +793,14 @@ footer a {
         font-size: 3em;
     }
 
+    /*** Icon Desktop Styles ***/
+
+    #icon-header h1 {
+        margin: 0;
+        padding-top: 50px;
+        text-align: right;
+        width: 85%;
+    }
 
 
 }
