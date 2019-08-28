@@ -580,7 +580,7 @@ footer a {
     }
 
     header .logo-container {
-        width: 100%;
+        width: 20%;
     }
 
     header nav {
@@ -752,7 +752,6 @@ footer a {
     header .logo-container {
         display: flex;
         justify-content: flex-center;
-        width: 20%;
     }
 
     header .header-bottom {
